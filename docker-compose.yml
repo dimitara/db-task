@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  pg_superset_dev:
+    env_file: .env
+    build: .
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/var/lib/postgresql/data

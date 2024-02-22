@@ -36,6 +36,9 @@ insert into user_events (evt_type, user_id, evt_date, platform, meta)
 values ('signup', '3', '2024-01-03 08:20:00', 'web', null);
 
 insert into user_events (evt_type, user_id, evt_date, platform, meta) 
+values ('signup', '4', '2024-01-06 12:40:00', 'web', null);
+
+insert into user_events (evt_type, user_id, evt_date, platform, meta) 
 values ('add-payment-method', '1', '2024-01-02 09:03:00', 'app', '{"type": "card", "valid_until": "08/24"}');
 
 insert into user_events (evt_type, user_id, evt_date, platform, meta) 
@@ -46,6 +49,9 @@ values ('add-payment-method', '3', '2024-01-04 08:24:00', 'web', '{"type": "card
 
 insert into user_events (evt_type, user_id, evt_date, platform, meta) 
 values ('add-payment-method', '3', '2024-02-14 08:24:00', 'web', '{"type": "card", "valid_until": "01/26"}');
+
+insert into user_events (evt_type, user_id, evt_date, platform, meta) 
+values ('add-payment-method', '4', '2024-01-06 13:01:00', 'web', '{"type": "card", "valid_until": "01/24"}');
 
 insert into product_events (evt_type, user_id, product_id, location_id, location, evt_date, transaction_id, platform, meta)
 values ('borrow', '1', '1', '1', 'LOC A', '2024-01-14 08:24:00', '1', 'app', '');
@@ -70,3 +76,13 @@ values ('borrow', '2', '1', '2', 'LOC B', '2024-01-22 09:00:00', '4', 'web', '')
 
 insert into product_events (evt_type, user_id, product_id, location_id, location, evt_date, transaction_id, platform, meta)
 values ('borrow', '3', '2', '1', 'LOC A', '2024-01-23 14:00:00', '5', 'app', '');
+
+insert into product_events (evt_type, user_id, product_id, location_id, location, evt_date, transaction_id, platform, meta)
+values ('borrow', '4', '3', '2', 'LOC B', '2024-01-07 09:00:00', '6', 'web', '');
+
+insert into product_events (evt_type, user_id, product_id, location_id, location, evt_date, transaction_id, platform, meta)
+values ('return', '4', '3', '2', 'LOC B', '2024-01-07 12:00:00', '6', 'web', '');
+
+insert into product_events (evt_type, user_id, product_id, location_id, location, evt_date, transaction_id, platform, meta)
+values ('borrow', '4', '4', '2', 'LOC B', '2024-01-09 09:00:00', '7', 'web', '');
+
